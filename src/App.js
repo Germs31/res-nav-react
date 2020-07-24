@@ -1,5 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
@@ -10,6 +13,8 @@ import Home from './pages/Home';
 function App() {
   return (
     <div className="App">
+      <Navbar/>
+
       <Switch>
         <Route exact path="/" render={() => <Home/> } />
         <Route path="/about" render={() => <About/> } />

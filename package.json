@@ -34,5 +34,8 @@
   },
   "engines": {
     "yarn": "YARN NO LONGER USED - use npm instead."
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
   }
 }
