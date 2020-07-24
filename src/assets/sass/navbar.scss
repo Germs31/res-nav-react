@@ -24,5 +24,36 @@ nav {
                 color: teal;
             }
         }
+
+    }
+
+    .hamburger-container {
+        i {
+            display: flex;
+            margin: 5px 12px;
+            height: 2px;
+            width: 20px;
+            background: #000;
+        }
+
+        .open:nth-child(1){
+            transform: rotate(45deg) translateY(10px);
+        }
+        .open:nth-child(2){
+            opacity: 0;
+        }
+        .open:nth-child(3){
+            transform: rotate(-45deg) translateY(-10px);
+        }
+
+        .close:nth-child(1){
+            transform: rotate(0);
+        }
+        .close:nth-child(1){
+            opacity: 1;
+        }
+        .close:nth-child(1){
+            transform: rotate(0)
+        }
     }
 }
