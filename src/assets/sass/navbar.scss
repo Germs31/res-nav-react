@@ -85,5 +85,9 @@
         &.show {
             left: 0;
         }
+
+        @media(min-width: 950px) {
+            display: none;
+        }
     }
 }
