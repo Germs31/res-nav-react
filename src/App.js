@@ -14,14 +14,15 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-
-      <Switch>
-        <Route exact path="/" render={() => <Home/> } />
-        <Route path="/about" render={() => <About/> } />
-        <Route path="/contact" render={() => <Contact/> } />
-        <Route path="/blog" render={() => <Blog/> } />
-        <Route path="/portfolio" render={() => <Portfolio/> } />
-      </Switch>
+      <main>
+        <Switch>
+          <Route exact path="/" render={() => <Home/> } />
+          <Route path="/about" render={() => <About/> } />
+          <Route path="/contact" render={() => <Contact/> } />
+          <Route path="/blog" render={() => <Blog/> } />
+          <Route path="/portfolio" render={() => <Portfolio/> } />
+        </Switch>
+      </main>
     </div>
   );
 }

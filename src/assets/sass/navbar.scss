@@ -1,0 +1,28 @@
+nav {
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        img {
+            margin: 0 10px;
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    ul {
+        .nav-link {
+            list-style-type: none;
+            text-decoration: none;
+            margin: 0 12px;
+            color: #000;
+            transition: .5s;
+            font-weight: 500;
+            &:hover{
+                color: teal;
+            }
+        }
+    }
+}

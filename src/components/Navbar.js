@@ -1,15 +1,19 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import logo from '../assets/imgs/angryFace.png'
 
 const Navbar = () => {
     return (
         <nav>
+            <div className="logo">
+                <img src={logo} />
+            </div>
             <ul>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/blog">Blog</NavLink>
-                <NavLink to="/portfolio">Portfolio</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink className="nav-link" to="/">Home</NavLink>
+                <NavLink className="nav-link" to="/about">About</NavLink>
+                <NavLink className="nav-link" to="/blog">Blog</NavLink>
+                <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
+                <NavLink className="nav-link" to="/contact">Contact</NavLink>
             </ul>
         </nav>
     )
